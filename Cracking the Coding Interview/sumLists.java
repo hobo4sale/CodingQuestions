@@ -10,7 +10,7 @@ private Node sumLists(Node one, Node two) {
 
   int sum = one.data + two.data;
   boolean carry = false
-  if(sum > 9) {
+  if(sum > 9) { 
     sum %= 10;
     carry = true;
   }
