@@ -10,7 +10,7 @@ private Node sumLists(Node one, Node two) {
 
   int sum = one.data + two.data;
   boolean carry = false
-  if(sum > 9) { 
+  if(sum > 9) {
     sum %= 10;
     carry = true;
   }
@@ -39,13 +39,13 @@ private Node sumLists(Node one, Node two) {
     current.next = newNode;
     current = newNode;
 
-    if(one != null) {
-      one = one.next;
-    }
-
-    if(two != null) {
-      two = two.next;
-    }
+    one == null ? null : one.next;
+    two == null ? null : two.next;
+    
   }
   return head;
+}
+
+private Node sumLists2(Node one, Node two) {
+
 }
