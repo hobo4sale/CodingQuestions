@@ -41,11 +41,7 @@ private Node sumLists(Node one, Node two) {
 
     one == null ? null : one.next;
     two == null ? null : two.next;
-    
+
   }
   return head;
-}
-
-private Node sumLists2(Node one, Node two) {
-
 }
