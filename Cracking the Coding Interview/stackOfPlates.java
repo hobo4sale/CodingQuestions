@@ -1,5 +1,5 @@
 public class SetOfStacks() {
-  private ArrayList<Stack<Integer>> stacks = new ArrayList<Stack<Integer>>();
+  private ArrayList<Stack> stacks = new ArrayList<Stack>();
   private int max;
   private int currentStackSize;
 
@@ -14,12 +14,12 @@ public class SetOfStacks() {
 
   public void push(int data) {
     if(currentStackSize == max) {
-      Stack stack = new Stack<Integer>()
-      stack.push(new Node(data));
+      Stack stack = new Stack();
+      stack.push(data);
     }
     else {
       Stack stack = stacks.get(stacks.size() - 1);
-      stack.push(new Node(data));
+      stack.push(data);
       stacks.add(stack);
     }
   }

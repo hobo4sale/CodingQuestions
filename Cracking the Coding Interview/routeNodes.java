@@ -2,7 +2,7 @@ public boolean rootNodes(Node start, Node end) {
   if(start == end) {
     return true;
   }
-  Queue<Node> queue = new Queue<LinkedList>();
+  Queue<Node> queue = new LinkedList<Node>();
   queue.add(start);
   start.queued = true;
 

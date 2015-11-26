@@ -1,7 +1,7 @@
 public class queueStack {
 
-  private Stack<Integer> normal = new Stack<Integer>();
-  private Stack<Integer> reverse = new Stack<Integer>();
+  private Stack normal = new Stack();
+  private Stack reverse = new Stack();
 
   public Node pop() {
     moveItems();
@@ -14,7 +14,7 @@ public class queueStack {
   }
 
   public void push(int data) {
-    normal.push(new Node(data));
+    normal.push(data);
   }
 
   public boolean isEmpty() {

@@ -1,4 +1,4 @@
-public class MinStack {
+public class minStack {
 
   private class Node {
     private int data;
