@@ -37,8 +37,8 @@ private boolean getPath(boolean[][] maze, int row, int col, ArrayList<Point> pat
 
   if(isOrigin || getPath(maze, row, col - 1, path) || getPath(maze, row - 1, col -1, path)) {
     path.add(p)
-    sucess = true;
+    success = true;
   }
   cache.put(p, success);
-  return sucess;
+  return success;
 }
